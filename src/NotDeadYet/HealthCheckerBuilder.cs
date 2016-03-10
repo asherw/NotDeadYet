@@ -8,13 +8,22 @@ namespace NotDeadYet
 {
     public class HealthCheckerBuilder
     {
+#if NET40
         private HealthCheckerConfiguration.GetHealthChecks _healthChecksFunc = new AssemblyScanningHealthCheckStrategy(typeof (ApplicationIsRunning).Assembly).ScanForHealthChecks;
+#else
+        private HealthCheckerConfiguration.GetHealthChecks _healthChecksFunc = new AssemblyScanningHealthCheckStrategy(typeof (ApplicationIsRunning).GetTypeInfo().Assembly).ScanForHealthChecks;
+#endif
         private HealthCheckerConfiguration.LogError _logError = new DefaultLoggingStrategy().LogError;
         private TimeSpan _timeout = TimeSpan.FromSeconds(5);
 
         public HealthCheckerBuilder WithHealthChecksFromAssemblies(params Assembly[] assemblies)
         {
+#if NET40
             var allAssemblies = assemblies.Union(new[] {typeof (HealthCheckerBuilder).Assembly}).ToArray();
+#else
+            var allAssemblies = assemblies.Union(new[] {typeof (HealthCheckerBuilder).GetTypeInfo().Assembly}).ToArray();
+#endif
+
             _healthChecksFunc = new AssemblyScanningHealthCheckStrategy(allAssemblies).ScanForHealthChecks;
 
             return this;

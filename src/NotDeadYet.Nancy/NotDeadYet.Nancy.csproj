@@ -34,6 +34,9 @@
       <HintPath>..\packages\Nancy.1.4.1\lib\net40\Nancy.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="NotDeadYet">
+      <HintPath>..\NotDeadYet\bin\Debug\net40\NotDeadYet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,12 +52,6 @@
   <ItemGroup>
     <None Include="NotDeadYet.Nancy.nuspec" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NotDeadYet\NotDeadYet.csproj">
-      <Project>{8FD121DC-D464-400E-8561-3F3FC7359BAA}</Project>
-      <Name>NotDeadYet</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

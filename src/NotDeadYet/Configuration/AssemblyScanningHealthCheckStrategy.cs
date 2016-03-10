@@ -1,7 +1,7 @@
-﻿using System;
+﻿using NotDeadYet.Extensions;
+using System;
 using System.Linq;
 using System.Reflection;
-using ThirdDrawer.Extensions.TypeExtensionMethods;
 
 namespace NotDeadYet.Configuration
 {

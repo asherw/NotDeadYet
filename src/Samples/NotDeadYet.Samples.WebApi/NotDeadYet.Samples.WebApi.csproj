@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,6 +44,10 @@
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="NotDeadYet, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NotDeadYet\bin\Debug\net40\NotDeadYet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -268,10 +273,6 @@
     <ProjectReference Include="..\..\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj">
       <Project>{D146A024-6385-4D93-AB69-872093D4EAE3}</Project>
       <Name>NotDeadYet.WebApi</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\NotDeadYet\NotDeadYet.csproj">
-      <Project>{8FD121DC-D464-400E-8561-3F3FC7359BAA}</Project>
-      <Name>NotDeadYet</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

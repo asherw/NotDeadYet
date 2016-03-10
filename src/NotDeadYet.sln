@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet", "NotDeadYet\NotDeadYet.csproj", "{8FD121DC-D464-400E-8561-3F3FC7359BAA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.UnitTests", "NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj", "{871AB009-036A-41A3-90A4-B3F38DEF5702}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.MVC4", "Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj", "{9EE7CA10-BE8D-4935-96B2-7F18C2C54023}"
@@ -19,6 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Nancy", "NotDead
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD3BA019-77D5-4F94-AE51-F31531C4E322}"
 	ProjectSection(SolutionItems) = preProject
+		NotDeadYet.Dnx\global.json = NotDeadYet.Dnx\global.json
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
@@ -26,16 +25,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.WebApi", "NotDea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.WebApi", "Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj", "{FFF62411-0116-4936-9FC5-88CFB3546AC1}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "NotDeadYet", "NotDeadYet\NotDeadYet.xproj", "{695F9B97-3B26-481C-9184-92DB0030D158}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8FD121DC-D464-400E-8561-3F3FC7359BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FD121DC-D464-400E-8561-3F3FC7359BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FD121DC-D464-400E-8561-3F3FC7359BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FD121DC-D464-400E-8561-3F3FC7359BAA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{871AB009-036A-41A3-90A4-B3F38DEF5702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{871AB009-036A-41A3-90A4-B3F38DEF5702}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{871AB009-036A-41A3-90A4-B3F38DEF5702}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -64,6 +61,10 @@ Global
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695F9B97-3B26-481C-9184-92DB0030D158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695F9B97-3B26-481C-9184-92DB0030D158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695F9B97-3B26-481C-9184-92DB0030D158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695F9B97-3B26-481C-9184-92DB0030D158}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

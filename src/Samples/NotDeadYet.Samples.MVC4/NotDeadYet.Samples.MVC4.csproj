@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,6 +44,10 @@
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="NotDeadYet, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NotDeadYet\bin\Debug\net40\NotDeadYet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -230,12 +235,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj">
-      <Project>{658D5E7D-8CBE-461F-84EA-0E6BFA70A42F}</Project>
+      <Project>{658d5e7d-8cbe-461f-84ea-0e6bfa70a42f}</Project>
       <Name>NotDeadYet.MVC4</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\NotDeadYet\NotDeadYet.csproj">
-      <Project>{8FD121DC-D464-400E-8561-3F3FC7359BAA}</Project>
-      <Name>NotDeadYet</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
